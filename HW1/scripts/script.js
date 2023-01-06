@@ -1,7 +1,7 @@
 const task1 = "Task number one.\nНапиши скрипт, який розраховує індекс маси тіла людини.\nДля цього необхідно розділити вагу в кілограмах на квадрат висоти людини за метри\nlet weight = 88.3\nlet height = 1.75";
 console.log(task1);
-let weight = '88.3';
-let height = '1.75';
+let weight = 88.3;
+let height = 1.75;
 const bmi = weight/Math.pow(height,2);
 console.log(`індекс маси тіла дрівнює ${bmi.toFixed(1)}`); 
 
