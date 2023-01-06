@@ -21,18 +21,14 @@ rounding(numeric);
 const task3="Task number three\nНапиши скрипт, який переведе значення totalMinutes (кількість хвилин) у рядок у форматі годин і хвилин HH:MM."
 console.log(task3);
 function minsToHHMM(x){
-    let hoursStr;
-    let minutesStr;
-    if (parseInt(x/60) < 10){
-        hoursStr = `0${parseInt(x/60)}`
-    } else{
-        hoursStr = `${parseInt(x/60)}`
-    }
-    if (x%60 < 10){
-        minutesStr = `0${x%60}`
-    } else {
-        minutesStr = `${x%60}`
-    }
+    let hoursStr = parseInt(x/60);
+    let minutesStr = x%60;
+    if (hoursStr < 10){
+        hoursStr = `0${hoursStr}`;
+    } 
+    if (minutesStr < 10){
+        minutesStr = `0${minutesStr}`;
+    } 
     let timeStr = `${x} minutes = ${hoursStr}:${minutesStr}`;
     console.log(timeStr);
 }
