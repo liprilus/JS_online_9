@@ -112,7 +112,8 @@ const task5 = "Даний масив одиниць і нулів, перетв�
 console.log(task5);
 
 function binToDec(someData){
-    const tmpData = someData.slice()
+    // const tmpData = someData.slice()
+    const tmpData = [...someData]
     let tmpDec = 0
     for(x = 0; x < someData.length; x++){
         if(tmpData[tmpData.length-1]){
