@@ -252,8 +252,7 @@ const task16 = `DOM: Highlight cross
     table.setAttribute(`border`, `1`)
     document.body.append(table)
     for(let i = 0; i < 10; i++){
-        const line = document.createElement(`tr`)
-        line.id = `${i}`
+        const line = document.createElement(`tr`)        
         table.append(line)
         for(let j = 0; j < 10; j++){
             const cell = document.createElement(`td`)
